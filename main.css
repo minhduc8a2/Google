@@ -133,6 +133,7 @@ body{
     margin: 11px 12px 11px 4px;
     border: 1px solid transparent;
     border-radius: 4px;
+    
 }
 
 .header__itemSignInBtn:hover{
@@ -437,6 +438,7 @@ body{
     padding: 0 20px 0 14px;
     width: calc(100% - 34px);
     max-width: 100%;
+    cursor: pointer;
     
 }
 
@@ -493,6 +495,7 @@ body{
         margin: 11px 6px;
         border: 1px solid transparent;
         border-radius: 4px;
+        cursor: pointer;
 }
 
 .s2__btn:hover{
@@ -629,8 +632,13 @@ body{
     justify-content: flex-start;
     align-items: center;
     line-height: 24px;
+    cursor: pointer;
     
     
+}
+
+.footer__settingsTheme label{
+    cursor: pointer;
 }
 
 .footer__settingsTheme:hover .footer__settingsThemeIcon{
