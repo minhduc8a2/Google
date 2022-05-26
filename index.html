@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="./assets/img/logo/logo.png" type="image/icon type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" id="lightThemeCss" href="main.css">
+    <link rel="stylesheet" id="darkThemeCss" href="darkTheme.css">
+    
+    <title>Google</title>
+</head>
+<body>
+    <div  class="appContainer" id="appContainer">
+        <header class="header" id="header" >
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="https://mail.google.com/mail/&ogbl" class="header__item-serviceLinkText">Gmail</a>
+                </li>
+                <li class="header__item">
+                    <a href="https://www.google.com.vn/imghp?hl=en&ogbl" class="header__item-serviceLinkText">Images</a>
+                </li>
+                <li class="header__item" onclick="toggleHeaderGappsBox()">
+                    <div class="header__item-optionIconWrapper" >
+                        <svg class="header__item-optionIconFont" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg>
+                    </div>
+                    <div class="header__GappsWrapper" id="header__GappsWrapper">
+                        <div class="header__GappsWrapperInner">
+                            <ul class="header__GappsList">
+                                <li class="header__GappsItem">
+                                    <a href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg version="1.1" class="header__GappsIconSvg" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                        viewBox="0 0 1891.8 2411.5" style="enable-background:new 0 0 1891.8 2411.5;" xml:space="preserve">
+                                            <style type="text/css">
+                                            	.st0{fill:#4688F1;}
+                                            	.st1{fill:#FFFFFF;}
+                                            	.st2{fill:#3566B8;}
+                                            </style>
+                                            <g>
+                                            	<path class="st0" d="M1891.6,893.8V273L946,0L0.2,273v620.7c0,0-35.8,1092,945.9,1517.7C1927.4,1985.7,1891.6,893.8,1891.6,893.8
+                                            		L1891.6,893.8z"/>
+                                            	<circle class="st1" cx="939.4" cy="1001.2" r="568.3"/>
+                                            	<path class="st2" d="M506.9,1369.8c-84.6-99.2-135.7-227.9-135.7-368.6c0-313.8,254.4-568.3,568.3-568.3s568.3,254.4,568.3,568.3
+                                            		c0,140.6-51.1,269.3-135.6,368.5c-13.5-137.8-291.3-213.5-432.5-213.5C798.4,1156.2,519.7,1231.9,506.9,1369.8L506.9,1369.8z
+                                            		 M939.4,1019c119.6,0,216.6-97,216.6-216.6s-97-216.6-216.6-216.6s-216.6,97-216.6,216.6S819.8,1019,939.4,1019z"/>
+                                            </g>
+                                            </svg>
+                                        </div>
+                                        <span class="header__GappsName">Account</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://www.google.com.vn/webhp" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48"><defs><path id="a" d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"/></defs><clipPath id="b"><use xlink:href="#a" overflow="visible"/></clipPath><path clip-path="url(#b)" fill="#FBBC05" d="M0 37V11l17 13z"/><path clip-path="url(#b)" fill="#EA4335" d="M0 11l17 13 7-6.1L48 14V0H0z"/><path clip-path="url(#b)" fill="#34A853" d="M0 37l30-23 7.9 1L48 0v48H0z"/><path clip-path="url(#b)" fill="#4285F4" d="M48 48L17 24l-4-3 35-10z"/></svg>
+                                        </div>
+                                        <span class="header__GappsName">Search</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://www.youtube.com/?gl=VN" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"   viewBox="0 0 256 256" xml:space="preserve">
+                                                <desc>Created with Fabric.js 1.7.22</desc>
+                                                <defs>
+                                                </defs>
+                                                <g transform="translate(128 128) scale(0.72 0.72)" style="">
+                                                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)" >
+                                                    <path d="M 88.119 23.338 c -1.035 -3.872 -4.085 -6.922 -7.957 -7.957 C 73.144 13.5 45 13.5 45 13.5 s -28.144 0 -35.162 1.881 c -3.872 1.035 -6.922 4.085 -7.957 7.957 C 0 30.356 0 45 0 45 s 0 14.644 1.881 21.662 c 1.035 3.872 4.085 6.922 7.957 7.957 C 16.856 76.5 45 76.5 45 76.5 s 28.144 0 35.162 -1.881 c 3.872 -1.035 6.922 -4.085 7.957 -7.957 C 90 59.644 90 45 90 45 S 90 30.356 88.119 23.338 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                                    <polygon points="36,58.5 59.38,45 36,31.5 " style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                                                </g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <span class="header__GappsName">Youtube</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://play.google.com/?hl=en" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                          <svg xmlns="http://www.w3.org/2000/svg"  id="svg60" version="1.1" viewBox="-4.12599 -7.65905 35.75858 45.9543"><defs id="defs38"><linearGradient gradientUnits="userSpaceOnUse" y2="21.86" x2="-5.9" y1="1.87" x1="14.09" id="linear-gradient"><stop id="stop4" stop-color="#008eff" offset="0"/><stop id="stop6" stop-color="#008fff" offset=".01"/><stop id="stop8" stop-color="#00acff" offset=".26"/><stop id="stop10" stop-color="#00c0ff" offset=".51"/><stop id="stop12" stop-color="#00cdff" offset=".76"/><stop id="stop14" stop-color="#00d1ff" offset="1"/></linearGradient><linearGradient gradientUnits="userSpaceOnUse" y2="15.32" x2="-2.37" y1="15.32" x1="26.45" id="linear-gradient-2"><stop id="stop17" stop-color="#ffd800" offset="0"/><stop id="stop19" stop-color="#ff8a00" offset="1"/></linearGradient><linearGradient gradientUnits="userSpaceOnUse" y2="45.15" x2="-9.41" y1="18.05" x1="17.69" id="linear-gradient-3"><stop id="stop22" stop-color="#ff3a44" offset="0"/><stop id="stop24" stop-color="#b11162" offset="1"/></linearGradient><linearGradient gradientUnits="userSpaceOnUse" y2="3.81" x2="8.92" y1="-8.29" x1="-3.19" id="linear-gradient-4"><stop id="stop27" stop-color="#328e71" offset="0"/><stop id="stop29" stop-color="#2d9571" offset=".07"/><stop id="stop31" stop-color="#15bd74" offset=".48"/><stop id="stop33" stop-color="#06d575" offset=".8"/><stop id="stop35" stop-color="#00de76" offset="1"/></linearGradient><style id="style2">.cls-7{opacity:.07}</style></defs><g transform="translate(.004)" id="g58"><g id="g56"><path id="path40" d="M.55.48A2.39 2.39 0 000 2.15v26.34a2.41 2.41 0 00.55 1.67l.09.09 14.75-14.76v-.35L.64.39z" fill="url(#linear-gradient)"/><path id="path42" d="M20.31 20.41l-4.92-4.92v-.35l4.92-4.91.11.06 5.83 3.31c1.67.94 1.67 2.49 0 3.44l-5.83 3.31z" fill="url(#linear-gradient-2)"/><path id="path44" d="M20.42 20.35l-5-5L.55 30.16a2 2 0 002.45.07l17.39-9.88" fill="url(#linear-gradient-3)"/><path id="path46" d="M20.42 10.29L3 .4A1.93 1.93 0 00.55.48l14.84 14.84z" fill="url(#linear-gradient-4)"/><path id="path48" d="M20.31 20.24L3 30.06a2 2 0 01-2.39 0l-.09.09.09.09a2 2 0 002.39 0l17.39-9.88z" opacity=".1"/><path id="path50" d="M.55 30A2.43 2.43 0 010 28.32v.17a2.41 2.41 0 00.55 1.67l.09-.09z" class="cls-7"/><path id="path52" d="M26.25 16.86l-5.94 3.38.11.11L26.25 17a2.11 2.11 0 001.25-1.72 2.21 2.21 0 01-1.25 1.58z" class="cls-7"/><path id="path54" d="M3 .58l23.25 13.19a2.2 2.2 0 011.25 1.55 2.09 2.09 0 00-1.25-1.72L3 .4C1.36-.54 0 .24 0 2.15v.17C0 .42 1.36-.37 3 .58z" fill="#fff" opacity=".3"/></g></g></svg>
+                                        </div>
+                                        <span class="header__GappsName">Play</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://news.google.com/" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg  xmlns="http://www.w3.org/2000/svg" viewBox="1.1349999999999998 48.867000000000004 509.568 414.234"><radialGradient id="a" cx="22.546%" cy="8.104%" gradientTransform="matrix(.81793 0 0 1 .041 0)" r="97.22%"><stop offset="0" stop-color="#fff" stop-opacity=".1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient><g fill="none"><path d="M405.573 329.866c-.047 7.1-5.816 12.829-12.915 12.829H119.4c-7.122.032-12.926-5.707-12.973-12.829V61.728c.047-7.1 5.816-12.83 12.915-12.83H392.6c7.122-.031 12.926 5.708 12.973 12.83z" fill="#0c9d58"/><path d="M405.573 117.818l-102.429-13.174 102.429 27.498zm-144.626-54.94l-155.124 69.264 171.434-62.39v-.172c-2.672-6.335-9.955-9.328-16.31-6.702z" fill="#004d40" opacity=".2"/><path d="M392.658 48.899H119.4c-7.122-.032-12.926 5.707-12.973 12.829v2.876c.047-7.099 5.816-12.829 12.915-12.829H392.6c7.122-.032 12.926 5.707 12.973 12.829v-2.876c-.047-7.1-5.816-12.83-12.915-12.83z" fill="#fff" opacity=".2"/><path d="M172.757 321.64c-2.026 6.574 1.636 13.551 8.198 15.618l253.123 68.085c6.716 1.484 13.37-2.73 14.9-9.435l59.628-222.576c2.033-6.55-1.584-13.515-8.112-15.619L247.371 89.63c-6.716-1.485-13.37 2.729-14.9 9.434z" fill="#ea4335"/><path d="M451.596 252.778l13.317 80.885-13.317 49.704zM304.324 107.951l11.937 3.222 7.42 49.906z" fill="#3e2723" opacity=".2"/><path d="M500.494 157.713L247.371 89.63c-6.716-1.485-13.37 2.729-14.9 9.434L172.757 321.64c0 .373 0 .747-.201 1.121l59.196-220.908c1.53-6.705 8.184-10.919 14.9-9.434l253.123 68.084a12.397 12.397 0 0 1 8.37 14.382l.46-1.697c1.942-6.504-1.657-13.37-8.11-15.475z" fill="#fff" opacity=".2"/><path d="M372.12 294.227c2.598 6.37-.434 13.643-6.788 16.28L98.2 407.73c-6.558 2.073-13.56-1.537-15.676-8.082L3.711 183.083c-2.576-6.37.468-13.625 6.817-16.252L277.659 69.61c6.568-2.113 13.607 1.49 15.734 8.054l78.727 216.564z" fill="#ffc107"/><path d="M4.717 185.816c-2.578-6.362.45-13.614 6.789-16.252l267.131-97.222c6.467-2.034 13.375 1.464 15.562 7.88l-.806-2.56c-2.115-6.544-9.117-10.155-15.676-8.082l-267.19 97.251c-6.353 2.638-9.385 9.91-6.788 16.28l78.814 216.537v.201z" fill="#fff" opacity=".2"/><rect fill="#4285f4" height="302.022" rx="12.944" width="391.191" x="60.404" y="161.079"/><path d="M272.54 241.618h109.303a5.753 5.753 0 0 1 5.753 5.753v17.258a5.753 5.753 0 0 1-5.753 5.753H272.539v-28.764zm0 109.303h109.303a5.753 5.753 0 0 1 5.753 5.753v17.259a5.753 5.753 0 0 1-5.753 5.752H272.539v-28.764zm0-54.651H399.1a5.753 5.753 0 0 1 5.753 5.752v17.259a5.753 5.753 0 0 1-5.753 5.753H272.54z" fill="#fff"/><path d="M438.652 460.225H73.348c-7.142-.016-12.928-5.802-12.944-12.944v2.876c.016 7.142 5.802 12.928 12.944 12.944h365.304c7.142-.016 12.928-5.802 12.944-12.944v-2.876c-.016 7.142-5.802 12.928-12.944 12.944z" fill="#1a237e" opacity=".2"/><path d="M73.348 163.955h365.304c7.142.016 12.928 5.802 12.944 12.944v-2.877c-.016-7.142-5.802-12.928-12.944-12.943H73.348c-7.142.015-12.928 5.801-12.944 12.943v2.877c.016-7.142 5.802-12.928 12.944-12.944z" fill="#fff" opacity=".2"/><path d="M174.742 299.146v25.888h37.22c-3.078 15.82-16.97 27.268-37.22 27.268-23.035 0-41.708-18.673-41.708-41.708 0-23.034 18.673-41.708 41.708-41.708a37.393 37.393 0 0 1 26.606 10.413l19.704-19.703a66.157 66.157 0 0 0-46.31-17.978 69.034 69.034 0 1 0 0 138.067c39.867 0 66.157-28.016 66.157-67.451a82.121 82.121 0 0 0-1.093-13.088z" fill="#fff"/><path d="M175.46 325.034v2.876h36.531c.268-.94.499-1.898.69-2.876h-37.22z" fill="#1a237e" opacity=".2"/><path d="M175.46 379.685c-37.57.009-68.25-30.032-69.033-67.595v1.438c0 38.126 30.907 69.034 69.034 69.034 39.867 0 66.157-28.016 66.157-67.452v-.92c-.95 38.4-26.952 65.495-66.157 65.495zm26.492-100.386a37.393 37.393 0 0 0-26.491-10.355c-22.757.362-40.997 18.948-40.932 41.708v1.438c.674-22.178 18.66-39.911 40.845-40.27a37.393 37.393 0 0 1 26.492 10.355l21.142-21.141c-.49-.46-1.036-.863-1.554-1.323l-19.588 19.588zm185.644-11.793v-2.877a5.753 5.753 0 0 1-5.753 5.753H272.539v2.876h109.304a5.753 5.753 0 0 0 5.753-5.752zm-5.753 112.179H272.539v2.877h109.304a5.753 5.753 0 0 0 5.753-5.753v-2.876a5.753 5.753 0 0 1-5.753 5.752zm17.258-54.651H272.54v2.876h126.562a5.753 5.753 0 0 0 5.753-5.753v-2.876a5.753 5.753 0 0 1-5.753 5.753z" fill="#1a237e" opacity=".2"/><path d="M500.494 157.713l-94.921-25.398V61.728c-.047-7.1-5.816-12.83-12.915-12.83H119.4c-7.122-.031-12.926 5.708-12.973 12.83v70.184l-95.9 34.92c-6.353 2.637-9.385 9.91-6.788 16.28L60.404 338.84v111.317c.016 7.142 5.802 12.928 12.944 12.944h365.304c7.142-.016 12.928-5.802 12.944-12.944v-63.913l57.039-212.854c2.068-6.576-1.572-13.586-8.14-15.677z" fill="url(#a)"/></g></svg>
+                                        </div>
+                                        <span class="header__GappsName">News</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://mail.google.com/mail/" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg  viewBox="0 -31.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+                                                <g>
+                                                    <path d="M58.1818182,192.049515 L58.1818182,93.1404244 L27.5066233,65.0770089 L0,49.5040608 L0,174.59497 C0,184.253152 7.82545455,192.049515 17.4545455,192.049515 L58.1818182,192.049515 Z" fill="#4285F4"></path>
+                                                    <path d="M197.818182,192.049515 L238.545455,192.049515 C248.203636,192.049515 256,184.224061 256,174.59497 L256,49.5040608 L224.844415,67.3422767 L197.818182,93.1404244 L197.818182,192.049515 Z" fill="#34A853"></path>
+                                                    <polygon fill="#EA4335" points="58.1818182 93.1404244 54.0077618 54.4932827 58.1818182 17.5040608 128 69.8676972 197.818182 17.5040608 202.487488 52.4960089 197.818182 93.1404244 128 145.504061"></polygon>
+                                                    <path d="M197.818182,17.5040608 L197.818182,93.1404244 L256,49.5040608 L256,26.2313335 C256,4.64587897 231.36,-7.65957557 214.109091,5.28587897 L197.818182,17.5040608 Z" fill="#FBBC04"></path>
+                                                    <path d="M0,49.5040608 L26.7588051,69.5731646 L58.1818182,93.1404244 L58.1818182,17.5040608 L41.8909091,5.28587897 C24.6109091,-7.65957557 0,4.64587897 0,26.2313335 L0,49.5040608 Z" fill="#C5221F"></path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <span class="header__GappsName">Gmail</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://meet.google.com/?hs=197" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 87.50999999999999 72"><path fill="#00832d" d="M49.5 36l8.53 9.75 11.47 7.33 2-17.02-2-16.64-11.69 6.44z"/><path fill="#0066da" d="M0 51.5V66c0 3.315 2.685 6 6 6h14.5l3-10.96-3-9.54-9.95-3z"/><path fill="#e94235" d="M20.5 0L0 20.5l10.55 3 9.95-3 2.95-9.41z"/><path fill="#2684fc" d="M20.5 20.5H0v31h20.5z"/><path fill="#00ac47" d="M82.6 8.68L69.5 19.42v33.66l13.16 10.79c1.97 1.54 4.85.135 4.85-2.37V11c0-2.535-2.945-3.925-4.91-2.32zM49.5 36v15.5h-29V72h43c3.315 0 6-2.685 6-6V53.08z"/><path fill="#ffba00" d="M63.5 0h-43v20.5h29V36l20-16.57V6c0-3.315-2.685-6-6-6z"/></svg>
+                                        </div>
+                                        <span class="header__GappsName">Meet</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://chat.google.com/" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg  viewBox="0 0 479.4 506.3"  xmlns="http://www.w3.org/2000/svg"><path d="m108.8 269.7v-162.5h-71c-20.9 0-37.8 17-37.8 37.9v335.9c0 16.9 20.4 25.3 32.3 13.4l78.1-78.1h222.4c20.9 0 37.8-16.9 37.8-37.8v-71h-223.9c-20.9 0-37.9-16.9-37.9-37.8z" fill="#00ac47"/><path d="m441.6 0h-294.9c-20.9 0-37.8 16.9-37.8 37.8v69.4h223.9c20.9 0 37.8 16.9 37.8 37.8v162.4h71c20.9 0 37.8-16.9 37.8-37.8v-231.8c0-20.9-16.9-37.8-37.8-37.8z" fill="#5bb974"/><path d="m332.8 107.2h-224v162.4c0 20.9 16.9 37.8 37.8 37.8h223.9v-162.3c.1-20.9-16.8-37.9-37.7-37.9z" fill="#00832d"/></svg>
+                                        </div>
+                                        <span class="header__GappsName">Chat</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://contacts.google.com/?hl=en" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg version="1.1" id="svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 464.8 464.8" style="enable-background:new 0 0 464.8 464.8" xml:space="preserve"><style type="text/css">.st0{fill:#1972E6;} .st1{fill:#1759BB;} .st2{fill:#FFFFFF;}</style><g><circle class="st0" cx="232.4" cy="232.4" r="232.4"/><g><g><path class="st1" d="M343.9,333.4v-19.7c0-6.8-2.4-13.5-6.8-18.7c-4.1-4.9-9.4-10.6-13.7-13.9c-19-14.4-46.8-23.6-79.5-26.3 c-11.9-1-16.2-0.9-28.5,0.5c-39.2,4.5-69.2,18.1-84.8,38.4c-0.6,0.8-1.2,1.5-1.7,2.2c-3.9,5.1-6,11.3-6,17.7v19.9 c0,16.9,13.7,30.6,30.6,30.6h159.9C330.2,363.9,343.9,350.2,343.9,333.4z"/><circle class="st1" cx="232.4" cy="174.5" r="51"/></g><g><path class="st2" d="M343.9,320.4v-19.7c0-6.8-2.4-13.5-6.8-18.7c-4.1-4.9-9.4-10.6-13.7-13.9c-19-14.4-46.8-23.6-79.5-26.3 c-11.9-1-16.2-0.9-28.5,0.5c-39.2,4.5-69.2,18.1-84.8,38.4c-0.6,0.8-1.2,1.5-1.7,2.2c-3.9,5.1-6,11.3-6,17.7v19.9 c0,16.9,13.7,30.6,30.6,30.6h159.9C330.2,351,343.9,337.3,343.9,320.4z"/><circle class="st2" cx="232.4" cy="161.5" r="51"/></g></g></g></svg>
+                                        </div>
+                                        <span class="header__GappsName">Contact</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://drive.google.com/" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg viewBox="-0.01999999999999999 -0.88 939.13 843.29" xmlns="http://www.w3.org/2000/svg" ><path d="M641.86 570.64H298.27l-147.13 257c17.7 9 37.8 14.77 50.8 14.77 135.16 0 411-2 547.93-2 14.08 0 27.26-4.8 39.08-12.32z" fill="#4185f3"/><path d="M151.14 827.65l147.13-257H.13c-.15 17.86 6.2 34.2 16.15 52.84C44 675.35 90.9 758.25 118.45 801.55c6.79 10.67 33.75 26.64 32.69 26.1z" fill="#1767d1"/><path d="M641.86 570.64L789 828.05c19.07-12.12 34.61-31.32 44.7-49 22.78-39.87 61.3-106.26 87.87-151.21 12.35-20.9 17.15-39.67 16.85-57.22z" fill="#e94235"/><path d="M298.3 570.66L469.92 272.3 316.54 16.58c-16.59 10.91-30.78 25.72-37.22 37C212.37 171 77.5 411.65 9.68 530.59a73.54 73.54 0 0 0-9.59 40.07z" fill="#30a753"/><path d="M641.85 570.66L469.92 272.3 619.09 16.87c16.59 10.92 34.8 25.43 41.24 36.72C727.28 171 862.15 411.65 930 530.59c7 12.23 9.11 26.07 8.43 40.07z" fill="#f9bc00"/><path d="M316.52 16.62l153.4 255.68L619.09 16.87c-15.4-9-37.21-14.33-58.33-15C502-.09 406.74-.88 355.47 1.35c-12.64.55-38.79 15.16-38.95 15.27z" fill="#0f8038"/></svg>
+                                        </div>
+                                        <span class="header__GappsName">Drive</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://calendar.google.com/calendar" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="186 38 76 76"><path fill="#fff" d="M244 56h-40v40h40V56z"/><path fill="#EA4335" d="M244 114l18-18h-18v18z"/><path fill="#FBBC04" d="M262 56h-18v40h18V56z"/><path fill="#34A853" d="M244 96h-40v18h40V96z"/><path fill="#188038" d="M186 96v12c0 3.315 2.685 6 6 6h12V96h-18z"/><path fill="#1967D2" d="M262 56V44c0-3.315-2.685-6-6-6h-12v18h18z"/><path fill="#4285F4" d="M244 38h-52c-3.315 0 -6 2.685-6 6v52h18V56h40V38z"/><path fill="#4285F4" d="M212.205 87.03c-1.495-1.01-2.53-2.485-3.095-4.435l3.47-1.43c.315 1.2.865 2.13 1.65 2.79.78.66 1.73.985 2.84.985 1.135 0 2.11-.345 2.925-1.035s1.225-1.57 1.225-2.635c0-1.09-.43-1.98-1.29-2.67-.86-.69-1.94-1.035-3.23-1.035h-2.005V74.13h1.8c1.11 0 2.045-.3 2.805-.9.76-.6 1.14-1.42 1.14-2.465 0 -.93-.34-1.67-1.02-2.225-.68-.555-1.54-.835-2.585-.835-1.02 0 -1.83.27-2.43.815a4.784 4.784 0 0 0 -1.31 2.005l-3.435-1.43c.455-1.29 1.29-2.43 2.515-3.415 1.225-.985 2.79-1.48 4.69-1.48 1.405 0 2.67.27 3.79.815 1.12.545 2 1.3 2.635 2.26.635.965.95 2.045.95 3.245 0 1.225-.295 2.26-.885 3.11-.59.85-1.315 1.5-2.175 1.955v.205a6.605 6.605 0 0 1 2.79 2.175c.725.975 1.09 2.14 1.09 3.5 0 1.36-.345 2.575-1.035 3.64s-1.645 1.905-2.855 2.515c-1.215.61-2.58.92-4.095.92-1.755.005-3.375-.5-4.87-1.51zM233.52 69.81l-3.81 2.755-1.905-2.89 6.835-4.93h2.62V88h-3.74V69.81z"/></svg>
+                                        </div>
+                                        <span class="header__GappsName">Calendar</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://translate.google.com.vn/?hl=en" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg viewBox="0 0 998.1 998.3" xmlns="http://www.w3.org/2000/svg" ><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="534.3" x2="998.1" y1="433.2" y2="433.2"><stop offset="0" stop-color="#fff" stop-opacity=".2"/><stop offset="1" stop-color="#fff" stop-opacity=".02"/></linearGradient><radialGradient id="b" cx="65.208" cy="19.366" gradientUnits="userSpaceOnUse" r="1398.271"><stop offset="0" stop-color="#fff" stop-opacity=".1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient><path d="M931.7 998.3c36.5 0 66.4-29.4 66.4-65.4V265.8c0-36-29.9-65.4-66.4-65.4H283.6l260.1 797.9z" fill="#dbdbdb"/><path d="M931.7 230.4c9.7 0 18.9 3.8 25.8 10.6 6.8 6.7 10.6 15.5 10.6 24.8v667.1c0 9.3-3.7 18.1-10.6 24.8-6.9 6.8-16.1 10.6-25.8 10.6H565.5L324.9 230.4zm0-30H283.6l260.1 797.9h388c36.5 0 66.4-29.4 66.4-65.4V265.8c0-36-29.9-65.4-66.4-65.4z" fill="#dcdcdc"/><path d="M482.3 809.8l61.4 188.5 170.7-188.5z" fill="#4352b8"/><path d="M936.1 476.1V437H747.6v-63.2h-61.2V437H566.1v39.1h239.4c-12.8 45.1-41.1 87.7-68.7 120.8-48.9-57.9-49.1-76.7-49.1-76.7h-50.8s2.1 28.2 70.7 108.6c-22.3 22.8-39.2 36.3-39.2 36.3l15.6 48.8s23.6-20.3 53.1-51.6c29.6 32.1 67.8 70.7 117.2 116.7l32.1-32.1c-52.9-48-91.7-86.1-120.2-116.7 38.2-45.2 77-102.1 85.2-154.2H936v.1z" fill="#607988"/><path d="M66.4 0C29.9 0 0 29.9 0 66.5v677c0 36.5 29.9 66.4 66.4 66.4h648.1L454.4 0z" fill="#4285f4"/><path d="M534.3 200.4h397.4c36.5 0 66.4 29.4 66.4 65.4V666z" fill="url(#a)"/><path d="M371.4 430.6c-2.5 30.3-28.4 75.2-91.1 75.2-54.3 0-98.3-44.9-98.3-100.2s44-100.2 98.3-100.2c30.9 0 51.5 13.4 63.3 24.3l41.2-39.6c-27.1-25-62.4-40.6-104.5-40.6-86.1 0-156 69.9-156 156s69.9 156 156 156c90.2 0 149.8-63.3 149.8-152.6 0-12.8-1.6-22.2-3.7-31.8h-146v53.4z" fill="#eee"/><path d="M931.7 200.4H518.8L454.4 0h-388C29.9 0 0 29.9 0 66.5v677c0 36.5 29.9 66.4 66.4 66.4h415.9l61.4 188.4h388c36.5 0 66.4-29.4 66.4-65.4V265.8c0-36-29.9-65.4-66.4-65.4z" fill="url(#b)"/></svg>
+                                        </div>
+                                        <span class="header__GappsName">Translate</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://photos.google.com/?pageId=none" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="135.688 36.52 511.623 510.753"><path fill="#DD4B39" stroke="#DD4B39" stroke-width=".094" d="M391.6 36.6c1.4.8 2.6 2 3.7 3.2 41.3 41.5 82.7 83 123.899 124.6-26 25.6-51.6 51.6-77.399 77.3-9.7 9.8-19.601 19.4-29.2 29.4-7.2-17.4-14.1-34.9-21-52.4 0-18.2.1-36.4 0-54.7-.1-42.4-.2-84.9 0-127.4z"/><path fill="#EF851C" stroke="#EF851C" stroke-width=".094" d="M263.5 164h128.1c.1 18.3 0 36.5 0 54.7-7.1 17.2-14 34.5-20.8 51.9-2.2-1.2-3.8-3-5.5-4.8L263.9 164.4l-.4-.4z"/><path fill="#7E3794" stroke="#7E3794" stroke-width=".094" d="M519.199 164.4l.4-.3c-.1 42.6-.1 85.3 0 127.9h-55.1c-17.2-7.2-34.601-13.8-51.9-20.9 9.6-10 19.5-19.6 29.2-29.4 25.801-25.7 51.4-51.7 77.4-77.3z"/><path fill="#FFBB1B" stroke="#FFBB1B" stroke-width=".094" d="M242.6 185.5c7.2-6.9 13.9-14.3 21.3-21.1l101.4 101.4c1.7 1.8 3.3 3.6 5.5 4.8-2.3 1.7-5.2 2.3-7.8 3.5-14.801 6-29.801 11.6-44.5 18-18.301-.2-36.601-.1-54.9-.1-42.6-.1-85.2.2-127.8-.1 35.5-35.6 71.2-71 106.8-106.4z"/><path fill="#1A8763" stroke="#1A8763" stroke-width=".094" d="M263.6 292c18.3 0 36.6-.1 54.9.1 17.3 7.1 34.6 13.8 51.899 20.8C342 341.7 313.3 370.1 284.8 398.8c-7.2 6.8-13.7 14.3-21.3 20.7 0-42.5-.1-85 .1-127.5z"/><path fill="#427FED" stroke="#427FED" stroke-width=".094" d="M464.5 292h55.1c42.5.1 85.1-.1 127.6.1-27.3 27.7-55 55.1-82.399 82.6-15.2 15.1-30.2 30.399-45.4 45.3-34-34.4-68.5-68.4-102.6-102.8-1.4-1.5-2.9-2.8-4.601-3.8 2.9-1.801 6.101-2.7 9.2-4 14.4-5.8 28.799-11.4 43.1-17.4z"/><path fill="#65B045" stroke="#65B045" stroke-width=".094" d="M370.4 312.9c7.3 17.399 13.9 35 21.2 52.399-.1 18.2 0 36.5-.1 54.7v88c-.2 13.1.3 26.2-.2 39.2-2.101-1-3.4-2.9-5.101-4.5C345.3 501.6 304.5 460.5 263.5 419.5c7.6-6.4 14.1-13.9 21.3-20.7 28.5-28.7 57.2-57.1 85.6-85.9z"/><path fill="#43459D" stroke="#43459D" stroke-width=".094" d="M412.199 313.4c1.7 1 3.2 2.3 4.601 3.8 34.1 34.4 68.6 68.4 102.6 102.8-42.7-.1-85.3.1-127.899 0 .1-18.2 0-36.5.1-54.7 6.699-17.3 13.899-34.5 20.598-51.9z"/></svg>
+                                        </div>
+                                        <span class="header__GappsName">Photos</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://duo.google.com/?usp=duo_ald" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+                                                <rect fill="none" height="192" width="192"/>
+                                                <path d="M184 101c-2.41 46.45-40.96 83-88 83-48.59 0-88-39.4-88-88S47.41 8 96 8h74c7.67 0 14 6.33 14 14v79z" fill="#1A73E8"/>
+                                                <path d="M170 8H96C47.4 8 8 47.38 8 95.95v-.02C8.27 47.59 47.57 9 96 9h74c7.68 0 14 6.33 14 14v-1c0-7.67-6.32-14-14-14z" fill="#FFFFFF" opacity=".2"/>
+                                                <path d="M184 101v-2c-2.41 46.46-40.95 84-88 84-48.43 0-87.72-39.62-87.99-88 0 .17-.01.83-.01 1 0 48.61 39.4 88.09 88 88 47.79-.09 85.87-36.62 88-84" fill="#1A237E" fill-opacity=".2"/>
+                                                <path d="M132 113c0 8.48-6.6 13.99-15 14H67c-8.39.01-14.99-5.46-15-13.93V118c.01 8.48 6.61 15.01 15 15h50c8.39-.01 15.01-6.52 15-15v-5zM156 117c-.03 2.47-3.31 3.82-5 2l-19-19v5l19 19c2 1.91 5 .71 5-2v-5z" fill="#185ABC"/>
+                                                <path d="M151 69l-19 19v12.01L151 119c1.77 1.88 5 .58 5-2V71c0-2.52-3.19-3.78-5-2z" fill="#F1F3F4"/>
+                                                <path d="M117 60H67c-8.39.01-15.01 6.74-15 15v38c.01 8.26 6.61 15.01 15 15h50c8.39-.01 15.01-6.74 15-15V75c-.01-8.26-6.61-15.01-15-15z" fill="#FFFFFF"/>
+                                                <polygon fill="#BDC1C6" points="132,101.2 132.01,100 136,104 136,84 132,88"/>
+                                              </svg>
+                                        </div>
+                                        <span class="header__GappsName">Duo</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://www.google.com.vn/shopping?hl=en&source=og" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg  viewBox=".381 -4.99021715 516.22889793 516.22821715" width="2500" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="m411.503 136.66c20.182 0 36.545-16.362 36.545-36.544s-16.363-36.544-36.545-36.544-36.544 16.362-36.544 36.544 16.362 36.544 36.544 36.544zm-258.888-11.155 112.108-112.108c8.552-8.552 20.428-13.777 33.493-13.777h166.276a47.343 47.343 0 0 1 47.508 47.507v166.276c0 13.065-5.226 24.942-14.015 33.493l-111.937 112.044z" fill="#4285f4"/><path d="m386.048 358.94-138.153 138.283c-8.79 8.551-20.666 14.015-33.73 14.015s-24.942-5.464-33.493-14.015l-166.277-166.275c-8.789-8.552-14.014-20.428-14.014-33.493 0-13.302 5.463-25.179 14.014-33.73l138.22-138.22z" fill="#34a853"/><path d="m95.085 411.637-80.69-80.69c-8.789-8.549-14.014-20.427-14.014-33.491 0-13.302 5.463-25.179 14.014-33.73l138.22-138.22 114.3 114.302z" fill="#fbbc05"/><path d="m495.595 11.127a47.344 47.344 0 0 0 -31.103-11.507h-166.276c-13.065 0-24.941 5.225-33.493 13.777l-112.108 112.108 114.3 114.302 116.415-116.415a36.394 36.394 0 0 1 -8.37-23.276c0-20.182 16.361-36.544 36.543-36.544a36.394 36.394 0 0 1 23.277 8.37z" fill="#ea4335"/><circle cx="266.849" cy="252.764" fill="#4285f4" r="74.23"/><path d="m367.983 230.928h-98.726v42.358h56.828c-5.298 26.91-27.45 42.358-56.828 42.358-34.675 0-62.607-28.903-62.607-64.783s27.932-64.783 62.607-64.783c14.93 0 28.414 5.482 39.009 14.452l30.822-31.894c-18.782-16.943-42.862-27.408-69.831-27.408-58.754 0-105.95 48.837-105.95 109.633s47.196 109.633 105.95 109.633c52.975 0 101.134-39.867 101.134-109.633 0-6.478-.963-13.455-2.408-19.933z" fill="#fff"/></g></svg>                                        </div>
+                                        <span class="header__GappsName">Shopping</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="header__GappsList header__GappsList--noBorder">
+                                <li class="header__GappsItem">
+                                    <a href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg version="1.1" class="header__GappsIconSvg" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                                        viewBox="0 0 1891.8 2411.5" style="enable-background:new 0 0 1891.8 2411.5;" xml:space="preserve">
+                                            <style type="text/css">
+                                            	.st0{fill:#4688F1;}
+                                            	.st1{fill:#FFFFFF;}
+                                            	.st2{fill:#3566B8;}
+                                            </style>
+                                            <g>
+                                            	<path class="st0" d="M1891.6,893.8V273L946,0L0.2,273v620.7c0,0-35.8,1092,945.9,1517.7C1927.4,1985.7,1891.6,893.8,1891.6,893.8
+                                            		L1891.6,893.8z"/>
+                                            	<circle class="st1" cx="939.4" cy="1001.2" r="568.3"/>
+                                            	<path class="st2" d="M506.9,1369.8c-84.6-99.2-135.7-227.9-135.7-368.6c0-313.8,254.4-568.3,568.3-568.3s568.3,254.4,568.3,568.3
+                                            		c0,140.6-51.1,269.3-135.6,368.5c-13.5-137.8-291.3-213.5-432.5-213.5C798.4,1156.2,519.7,1231.9,506.9,1369.8L506.9,1369.8z
+                                            		 M939.4,1019c119.6,0,216.6-97,216.6-216.6s-97-216.6-216.6-216.6s-216.6,97-216.6,216.6S819.8,1019,939.4,1019z"/>
+                                            </g>
+                                            </svg>
+                                        </div>
+                                        <span class="header__GappsName">Account</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://www.google.com.vn/webhp" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48"><defs><path id="a" d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"/></defs><clipPath id="b"><use xlink:href="#a" overflow="visible"/></clipPath><path clip-path="url(#b)" fill="#FBBC05" d="M0 37V11l17 13z"/><path clip-path="url(#b)" fill="#EA4335" d="M0 11l17 13 7-6.1L48 14V0H0z"/><path clip-path="url(#b)" fill="#34A853" d="M0 37l30-23 7.9 1L48 0v48H0z"/><path clip-path="url(#b)" fill="#4285F4" d="M48 48L17 24l-4-3 35-10z"/></svg>
+                                        </div>
+                                        <span class="header__GappsName">Search</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://www.youtube.com/?gl=VN" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"   viewBox="0 0 256 256" xml:space="preserve">
+                                                <desc>Created with Fabric.js 1.7.22</desc>
+                                                <defs>
+                                                </defs>
+                                                <g transform="translate(128 128) scale(0.72 0.72)" style="">
+                                                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)" >
+                                                    <path d="M 88.119 23.338 c -1.035 -3.872 -4.085 -6.922 -7.957 -7.957 C 73.144 13.5 45 13.5 45 13.5 s -28.144 0 -35.162 1.881 c -3.872 1.035 -6.922 4.085 -7.957 7.957 C 0 30.356 0 45 0 45 s 0 14.644 1.881 21.662 c 1.035 3.872 4.085 6.922 7.957 7.957 C 16.856 76.5 45 76.5 45 76.5 s 28.144 0 35.162 -1.881 c 3.872 -1.035 6.922 -4.085 7.957 -7.957 C 90 59.644 90 45 90 45 S 90 30.356 88.119 23.338 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                                    <polygon points="36,58.5 59.38,45 36,31.5 " style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                                                </g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <span class="header__GappsName">Youtube</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://play.google.com/?hl=en" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                          <svg xmlns="http://www.w3.org/2000/svg"  id="svg60" version="1.1" viewBox="-4.12599 -7.65905 35.75858 45.9543"><defs id="defs38"><linearGradient gradientUnits="userSpaceOnUse" y2="21.86" x2="-5.9" y1="1.87" x1="14.09" id="linear-gradient"><stop id="stop4" stop-color="#008eff" offset="0"/><stop id="stop6" stop-color="#008fff" offset=".01"/><stop id="stop8" stop-color="#00acff" offset=".26"/><stop id="stop10" stop-color="#00c0ff" offset=".51"/><stop id="stop12" stop-color="#00cdff" offset=".76"/><stop id="stop14" stop-color="#00d1ff" offset="1"/></linearGradient><linearGradient gradientUnits="userSpaceOnUse" y2="15.32" x2="-2.37" y1="15.32" x1="26.45" id="linear-gradient-2"><stop id="stop17" stop-color="#ffd800" offset="0"/><stop id="stop19" stop-color="#ff8a00" offset="1"/></linearGradient><linearGradient gradientUnits="userSpaceOnUse" y2="45.15" x2="-9.41" y1="18.05" x1="17.69" id="linear-gradient-3"><stop id="stop22" stop-color="#ff3a44" offset="0"/><stop id="stop24" stop-color="#b11162" offset="1"/></linearGradient><linearGradient gradientUnits="userSpaceOnUse" y2="3.81" x2="8.92" y1="-8.29" x1="-3.19" id="linear-gradient-4"><stop id="stop27" stop-color="#328e71" offset="0"/><stop id="stop29" stop-color="#2d9571" offset=".07"/><stop id="stop31" stop-color="#15bd74" offset=".48"/><stop id="stop33" stop-color="#06d575" offset=".8"/><stop id="stop35" stop-color="#00de76" offset="1"/></linearGradient><style id="style2">.cls-7{opacity:.07}</style></defs><g transform="translate(.004)" id="g58"><g id="g56"><path id="path40" d="M.55.48A2.39 2.39 0 000 2.15v26.34a2.41 2.41 0 00.55 1.67l.09.09 14.75-14.76v-.35L.64.39z" fill="url(#linear-gradient)"/><path id="path42" d="M20.31 20.41l-4.92-4.92v-.35l4.92-4.91.11.06 5.83 3.31c1.67.94 1.67 2.49 0 3.44l-5.83 3.31z" fill="url(#linear-gradient-2)"/><path id="path44" d="M20.42 20.35l-5-5L.55 30.16a2 2 0 002.45.07l17.39-9.88" fill="url(#linear-gradient-3)"/><path id="path46" d="M20.42 10.29L3 .4A1.93 1.93 0 00.55.48l14.84 14.84z" fill="url(#linear-gradient-4)"/><path id="path48" d="M20.31 20.24L3 30.06a2 2 0 01-2.39 0l-.09.09.09.09a2 2 0 002.39 0l17.39-9.88z" opacity=".1"/><path id="path50" d="M.55 30A2.43 2.43 0 010 28.32v.17a2.41 2.41 0 00.55 1.67l.09-.09z" class="cls-7"/><path id="path52" d="M26.25 16.86l-5.94 3.38.11.11L26.25 17a2.11 2.11 0 001.25-1.72 2.21 2.21 0 01-1.25 1.58z" class="cls-7"/><path id="path54" d="M3 .58l23.25 13.19a2.2 2.2 0 011.25 1.55 2.09 2.09 0 00-1.25-1.72L3 .4C1.36-.54 0 .24 0 2.15v.17C0 .42 1.36-.37 3 .58z" fill="#fff" opacity=".3"/></g></g></svg>
+                                        </div>
+                                        <span class="header__GappsName">Play</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://news.google.com/" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg  xmlns="http://www.w3.org/2000/svg" viewBox="1.1349999999999998 48.867000000000004 509.568 414.234"><radialGradient id="a" cx="22.546%" cy="8.104%" gradientTransform="matrix(.81793 0 0 1 .041 0)" r="97.22%"><stop offset="0" stop-color="#fff" stop-opacity=".1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient><g fill="none"><path d="M405.573 329.866c-.047 7.1-5.816 12.829-12.915 12.829H119.4c-7.122.032-12.926-5.707-12.973-12.829V61.728c.047-7.1 5.816-12.83 12.915-12.83H392.6c7.122-.031 12.926 5.708 12.973 12.83z" fill="#0c9d58"/><path d="M405.573 117.818l-102.429-13.174 102.429 27.498zm-144.626-54.94l-155.124 69.264 171.434-62.39v-.172c-2.672-6.335-9.955-9.328-16.31-6.702z" fill="#004d40" opacity=".2"/><path d="M392.658 48.899H119.4c-7.122-.032-12.926 5.707-12.973 12.829v2.876c.047-7.099 5.816-12.829 12.915-12.829H392.6c7.122-.032 12.926 5.707 12.973 12.829v-2.876c-.047-7.1-5.816-12.83-12.915-12.83z" fill="#fff" opacity=".2"/><path d="M172.757 321.64c-2.026 6.574 1.636 13.551 8.198 15.618l253.123 68.085c6.716 1.484 13.37-2.73 14.9-9.435l59.628-222.576c2.033-6.55-1.584-13.515-8.112-15.619L247.371 89.63c-6.716-1.485-13.37 2.729-14.9 9.434z" fill="#ea4335"/><path d="M451.596 252.778l13.317 80.885-13.317 49.704zM304.324 107.951l11.937 3.222 7.42 49.906z" fill="#3e2723" opacity=".2"/><path d="M500.494 157.713L247.371 89.63c-6.716-1.485-13.37 2.729-14.9 9.434L172.757 321.64c0 .373 0 .747-.201 1.121l59.196-220.908c1.53-6.705 8.184-10.919 14.9-9.434l253.123 68.084a12.397 12.397 0 0 1 8.37 14.382l.46-1.697c1.942-6.504-1.657-13.37-8.11-15.475z" fill="#fff" opacity=".2"/><path d="M372.12 294.227c2.598 6.37-.434 13.643-6.788 16.28L98.2 407.73c-6.558 2.073-13.56-1.537-15.676-8.082L3.711 183.083c-2.576-6.37.468-13.625 6.817-16.252L277.659 69.61c6.568-2.113 13.607 1.49 15.734 8.054l78.727 216.564z" fill="#ffc107"/><path d="M4.717 185.816c-2.578-6.362.45-13.614 6.789-16.252l267.131-97.222c6.467-2.034 13.375 1.464 15.562 7.88l-.806-2.56c-2.115-6.544-9.117-10.155-15.676-8.082l-267.19 97.251c-6.353 2.638-9.385 9.91-6.788 16.28l78.814 216.537v.201z" fill="#fff" opacity=".2"/><rect fill="#4285f4" height="302.022" rx="12.944" width="391.191" x="60.404" y="161.079"/><path d="M272.54 241.618h109.303a5.753 5.753 0 0 1 5.753 5.753v17.258a5.753 5.753 0 0 1-5.753 5.753H272.539v-28.764zm0 109.303h109.303a5.753 5.753 0 0 1 5.753 5.753v17.259a5.753 5.753 0 0 1-5.753 5.752H272.539v-28.764zm0-54.651H399.1a5.753 5.753 0 0 1 5.753 5.752v17.259a5.753 5.753 0 0 1-5.753 5.753H272.54z" fill="#fff"/><path d="M438.652 460.225H73.348c-7.142-.016-12.928-5.802-12.944-12.944v2.876c.016 7.142 5.802 12.928 12.944 12.944h365.304c7.142-.016 12.928-5.802 12.944-12.944v-2.876c-.016 7.142-5.802 12.928-12.944 12.944z" fill="#1a237e" opacity=".2"/><path d="M73.348 163.955h365.304c7.142.016 12.928 5.802 12.944 12.944v-2.877c-.016-7.142-5.802-12.928-12.944-12.943H73.348c-7.142.015-12.928 5.801-12.944 12.943v2.877c.016-7.142 5.802-12.928 12.944-12.944z" fill="#fff" opacity=".2"/><path d="M174.742 299.146v25.888h37.22c-3.078 15.82-16.97 27.268-37.22 27.268-23.035 0-41.708-18.673-41.708-41.708 0-23.034 18.673-41.708 41.708-41.708a37.393 37.393 0 0 1 26.606 10.413l19.704-19.703a66.157 66.157 0 0 0-46.31-17.978 69.034 69.034 0 1 0 0 138.067c39.867 0 66.157-28.016 66.157-67.451a82.121 82.121 0 0 0-1.093-13.088z" fill="#fff"/><path d="M175.46 325.034v2.876h36.531c.268-.94.499-1.898.69-2.876h-37.22z" fill="#1a237e" opacity=".2"/><path d="M175.46 379.685c-37.57.009-68.25-30.032-69.033-67.595v1.438c0 38.126 30.907 69.034 69.034 69.034 39.867 0 66.157-28.016 66.157-67.452v-.92c-.95 38.4-26.952 65.495-66.157 65.495zm26.492-100.386a37.393 37.393 0 0 0-26.491-10.355c-22.757.362-40.997 18.948-40.932 41.708v1.438c.674-22.178 18.66-39.911 40.845-40.27a37.393 37.393 0 0 1 26.492 10.355l21.142-21.141c-.49-.46-1.036-.863-1.554-1.323l-19.588 19.588zm185.644-11.793v-2.877a5.753 5.753 0 0 1-5.753 5.753H272.539v2.876h109.304a5.753 5.753 0 0 0 5.753-5.752zm-5.753 112.179H272.539v2.877h109.304a5.753 5.753 0 0 0 5.753-5.753v-2.876a5.753 5.753 0 0 1-5.753 5.752zm17.258-54.651H272.54v2.876h126.562a5.753 5.753 0 0 0 5.753-5.753v-2.876a5.753 5.753 0 0 1-5.753 5.753z" fill="#1a237e" opacity=".2"/><path d="M500.494 157.713l-94.921-25.398V61.728c-.047-7.1-5.816-12.83-12.915-12.83H119.4c-7.122-.031-12.926 5.708-12.973 12.83v70.184l-95.9 34.92c-6.353 2.637-9.385 9.91-6.788 16.28L60.404 338.84v111.317c.016 7.142 5.802 12.928 12.944 12.944h365.304c7.142-.016 12.928-5.802 12.944-12.944v-63.913l57.039-212.854c2.068-6.576-1.572-13.586-8.14-15.677z" fill="url(#a)"/></g></svg>
+                                        </div>
+                                        <span class="header__GappsName">News</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://mail.google.com/mail/" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg  viewBox="0 -31.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+                                                <g>
+                                                    <path d="M58.1818182,192.049515 L58.1818182,93.1404244 L27.5066233,65.0770089 L0,49.5040608 L0,174.59497 C0,184.253152 7.82545455,192.049515 17.4545455,192.049515 L58.1818182,192.049515 Z" fill="#4285F4"></path>
+                                                    <path d="M197.818182,192.049515 L238.545455,192.049515 C248.203636,192.049515 256,184.224061 256,174.59497 L256,49.5040608 L224.844415,67.3422767 L197.818182,93.1404244 L197.818182,192.049515 Z" fill="#34A853"></path>
+                                                    <polygon fill="#EA4335" points="58.1818182 93.1404244 54.0077618 54.4932827 58.1818182 17.5040608 128 69.8676972 197.818182 17.5040608 202.487488 52.4960089 197.818182 93.1404244 128 145.504061"></polygon>
+                                                    <path d="M197.818182,17.5040608 L197.818182,93.1404244 L256,49.5040608 L256,26.2313335 C256,4.64587897 231.36,-7.65957557 214.109091,5.28587897 L197.818182,17.5040608 Z" fill="#FBBC04"></path>
+                                                    <path d="M0,49.5040608 L26.7588051,69.5731646 L58.1818182,93.1404244 L58.1818182,17.5040608 L41.8909091,5.28587897 C24.6109091,-7.65957557 0,4.64587897 0,26.2313335 L0,49.5040608 Z" fill="#C5221F"></path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <span class="header__GappsName">Gmail</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://meet.google.com/?hs=197" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 87.50999999999999 72"><path fill="#00832d" d="M49.5 36l8.53 9.75 11.47 7.33 2-17.02-2-16.64-11.69 6.44z"/><path fill="#0066da" d="M0 51.5V66c0 3.315 2.685 6 6 6h14.5l3-10.96-3-9.54-9.95-3z"/><path fill="#e94235" d="M20.5 0L0 20.5l10.55 3 9.95-3 2.95-9.41z"/><path fill="#2684fc" d="M20.5 20.5H0v31h20.5z"/><path fill="#00ac47" d="M82.6 8.68L69.5 19.42v33.66l13.16 10.79c1.97 1.54 4.85.135 4.85-2.37V11c0-2.535-2.945-3.925-4.91-2.32zM49.5 36v15.5h-29V72h43c3.315 0 6-2.685 6-6V53.08z"/><path fill="#ffba00" d="M63.5 0h-43v20.5h29V36l20-16.57V6c0-3.315-2.685-6-6-6z"/></svg>
+                                        </div>
+                                        <span class="header__GappsName">Meet</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://chat.google.com/" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg  viewBox="0 0 479.4 506.3"  xmlns="http://www.w3.org/2000/svg"><path d="m108.8 269.7v-162.5h-71c-20.9 0-37.8 17-37.8 37.9v335.9c0 16.9 20.4 25.3 32.3 13.4l78.1-78.1h222.4c20.9 0 37.8-16.9 37.8-37.8v-71h-223.9c-20.9 0-37.9-16.9-37.9-37.8z" fill="#00ac47"/><path d="m441.6 0h-294.9c-20.9 0-37.8 16.9-37.8 37.8v69.4h223.9c20.9 0 37.8 16.9 37.8 37.8v162.4h71c20.9 0 37.8-16.9 37.8-37.8v-231.8c0-20.9-16.9-37.8-37.8-37.8z" fill="#5bb974"/><path d="m332.8 107.2h-224v162.4c0 20.9 16.9 37.8 37.8 37.8h223.9v-162.3c.1-20.9-16.8-37.9-37.7-37.9z" fill="#00832d"/></svg>
+                                        </div>
+                                        <span class="header__GappsName">Chat</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://contacts.google.com/?hl=en" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg version="1.1" id="svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 464.8 464.8" style="enable-background:new 0 0 464.8 464.8" xml:space="preserve"><style type="text/css">.st0{fill:#1972E6;} .st1{fill:#1759BB;} .st2{fill:#FFFFFF;}</style><g><circle class="st0" cx="232.4" cy="232.4" r="232.4"/><g><g><path class="st1" d="M343.9,333.4v-19.7c0-6.8-2.4-13.5-6.8-18.7c-4.1-4.9-9.4-10.6-13.7-13.9c-19-14.4-46.8-23.6-79.5-26.3 c-11.9-1-16.2-0.9-28.5,0.5c-39.2,4.5-69.2,18.1-84.8,38.4c-0.6,0.8-1.2,1.5-1.7,2.2c-3.9,5.1-6,11.3-6,17.7v19.9 c0,16.9,13.7,30.6,30.6,30.6h159.9C330.2,363.9,343.9,350.2,343.9,333.4z"/><circle class="st1" cx="232.4" cy="174.5" r="51"/></g><g><path class="st2" d="M343.9,320.4v-19.7c0-6.8-2.4-13.5-6.8-18.7c-4.1-4.9-9.4-10.6-13.7-13.9c-19-14.4-46.8-23.6-79.5-26.3 c-11.9-1-16.2-0.9-28.5,0.5c-39.2,4.5-69.2,18.1-84.8,38.4c-0.6,0.8-1.2,1.5-1.7,2.2c-3.9,5.1-6,11.3-6,17.7v19.9 c0,16.9,13.7,30.6,30.6,30.6h159.9C330.2,351,343.9,337.3,343.9,320.4z"/><circle class="st2" cx="232.4" cy="161.5" r="51"/></g></g></g></svg>
+                                        </div>
+                                        <span class="header__GappsName">Contact</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://drive.google.com/" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg viewBox="-0.01999999999999999 -0.88 939.13 843.29" xmlns="http://www.w3.org/2000/svg" ><path d="M641.86 570.64H298.27l-147.13 257c17.7 9 37.8 14.77 50.8 14.77 135.16 0 411-2 547.93-2 14.08 0 27.26-4.8 39.08-12.32z" fill="#4185f3"/><path d="M151.14 827.65l147.13-257H.13c-.15 17.86 6.2 34.2 16.15 52.84C44 675.35 90.9 758.25 118.45 801.55c6.79 10.67 33.75 26.64 32.69 26.1z" fill="#1767d1"/><path d="M641.86 570.64L789 828.05c19.07-12.12 34.61-31.32 44.7-49 22.78-39.87 61.3-106.26 87.87-151.21 12.35-20.9 17.15-39.67 16.85-57.22z" fill="#e94235"/><path d="M298.3 570.66L469.92 272.3 316.54 16.58c-16.59 10.91-30.78 25.72-37.22 37C212.37 171 77.5 411.65 9.68 530.59a73.54 73.54 0 0 0-9.59 40.07z" fill="#30a753"/><path d="M641.85 570.66L469.92 272.3 619.09 16.87c16.59 10.92 34.8 25.43 41.24 36.72C727.28 171 862.15 411.65 930 530.59c7 12.23 9.11 26.07 8.43 40.07z" fill="#f9bc00"/><path d="M316.52 16.62l153.4 255.68L619.09 16.87c-15.4-9-37.21-14.33-58.33-15C502-.09 406.74-.88 355.47 1.35c-12.64.55-38.79 15.16-38.95 15.27z" fill="#0f8038"/></svg>
+                                        </div>
+                                        <span class="header__GappsName">Drive</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://calendar.google.com/calendar" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="186 38 76 76"><path fill="#fff" d="M244 56h-40v40h40V56z"/><path fill="#EA4335" d="M244 114l18-18h-18v18z"/><path fill="#FBBC04" d="M262 56h-18v40h18V56z"/><path fill="#34A853" d="M244 96h-40v18h40V96z"/><path fill="#188038" d="M186 96v12c0 3.315 2.685 6 6 6h12V96h-18z"/><path fill="#1967D2" d="M262 56V44c0-3.315-2.685-6-6-6h-12v18h18z"/><path fill="#4285F4" d="M244 38h-52c-3.315 0 -6 2.685-6 6v52h18V56h40V38z"/><path fill="#4285F4" d="M212.205 87.03c-1.495-1.01-2.53-2.485-3.095-4.435l3.47-1.43c.315 1.2.865 2.13 1.65 2.79.78.66 1.73.985 2.84.985 1.135 0 2.11-.345 2.925-1.035s1.225-1.57 1.225-2.635c0-1.09-.43-1.98-1.29-2.67-.86-.69-1.94-1.035-3.23-1.035h-2.005V74.13h1.8c1.11 0 2.045-.3 2.805-.9.76-.6 1.14-1.42 1.14-2.465 0 -.93-.34-1.67-1.02-2.225-.68-.555-1.54-.835-2.585-.835-1.02 0 -1.83.27-2.43.815a4.784 4.784 0 0 0 -1.31 2.005l-3.435-1.43c.455-1.29 1.29-2.43 2.515-3.415 1.225-.985 2.79-1.48 4.69-1.48 1.405 0 2.67.27 3.79.815 1.12.545 2 1.3 2.635 2.26.635.965.95 2.045.95 3.245 0 1.225-.295 2.26-.885 3.11-.59.85-1.315 1.5-2.175 1.955v.205a6.605 6.605 0 0 1 2.79 2.175c.725.975 1.09 2.14 1.09 3.5 0 1.36-.345 2.575-1.035 3.64s-1.645 1.905-2.855 2.515c-1.215.61-2.58.92-4.095.92-1.755.005-3.375-.5-4.87-1.51zM233.52 69.81l-3.81 2.755-1.905-2.89 6.835-4.93h2.62V88h-3.74V69.81z"/></svg>
+                                        </div>
+                                        <span class="header__GappsName">Calendar</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://translate.google.com.vn/?hl=en" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg viewBox="0 0 998.1 998.3" xmlns="http://www.w3.org/2000/svg" ><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="534.3" x2="998.1" y1="433.2" y2="433.2"><stop offset="0" stop-color="#fff" stop-opacity=".2"/><stop offset="1" stop-color="#fff" stop-opacity=".02"/></linearGradient><radialGradient id="b" cx="65.208" cy="19.366" gradientUnits="userSpaceOnUse" r="1398.271"><stop offset="0" stop-color="#fff" stop-opacity=".1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient><path d="M931.7 998.3c36.5 0 66.4-29.4 66.4-65.4V265.8c0-36-29.9-65.4-66.4-65.4H283.6l260.1 797.9z" fill="#dbdbdb"/><path d="M931.7 230.4c9.7 0 18.9 3.8 25.8 10.6 6.8 6.7 10.6 15.5 10.6 24.8v667.1c0 9.3-3.7 18.1-10.6 24.8-6.9 6.8-16.1 10.6-25.8 10.6H565.5L324.9 230.4zm0-30H283.6l260.1 797.9h388c36.5 0 66.4-29.4 66.4-65.4V265.8c0-36-29.9-65.4-66.4-65.4z" fill="#dcdcdc"/><path d="M482.3 809.8l61.4 188.5 170.7-188.5z" fill="#4352b8"/><path d="M936.1 476.1V437H747.6v-63.2h-61.2V437H566.1v39.1h239.4c-12.8 45.1-41.1 87.7-68.7 120.8-48.9-57.9-49.1-76.7-49.1-76.7h-50.8s2.1 28.2 70.7 108.6c-22.3 22.8-39.2 36.3-39.2 36.3l15.6 48.8s23.6-20.3 53.1-51.6c29.6 32.1 67.8 70.7 117.2 116.7l32.1-32.1c-52.9-48-91.7-86.1-120.2-116.7 38.2-45.2 77-102.1 85.2-154.2H936v.1z" fill="#607988"/><path d="M66.4 0C29.9 0 0 29.9 0 66.5v677c0 36.5 29.9 66.4 66.4 66.4h648.1L454.4 0z" fill="#4285f4"/><path d="M534.3 200.4h397.4c36.5 0 66.4 29.4 66.4 65.4V666z" fill="url(#a)"/><path d="M371.4 430.6c-2.5 30.3-28.4 75.2-91.1 75.2-54.3 0-98.3-44.9-98.3-100.2s44-100.2 98.3-100.2c30.9 0 51.5 13.4 63.3 24.3l41.2-39.6c-27.1-25-62.4-40.6-104.5-40.6-86.1 0-156 69.9-156 156s69.9 156 156 156c90.2 0 149.8-63.3 149.8-152.6 0-12.8-1.6-22.2-3.7-31.8h-146v53.4z" fill="#eee"/><path d="M931.7 200.4H518.8L454.4 0h-388C29.9 0 0 29.9 0 66.5v677c0 36.5 29.9 66.4 66.4 66.4h415.9l61.4 188.4h388c36.5 0 66.4-29.4 66.4-65.4V265.8c0-36-29.9-65.4-66.4-65.4z" fill="url(#b)"/></svg>
+                                        </div>
+                                        <span class="header__GappsName">Translate</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://photos.google.com/?pageId=none" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="135.688 36.52 511.623 510.753"><path fill="#DD4B39" stroke="#DD4B39" stroke-width=".094" d="M391.6 36.6c1.4.8 2.6 2 3.7 3.2 41.3 41.5 82.7 83 123.899 124.6-26 25.6-51.6 51.6-77.399 77.3-9.7 9.8-19.601 19.4-29.2 29.4-7.2-17.4-14.1-34.9-21-52.4 0-18.2.1-36.4 0-54.7-.1-42.4-.2-84.9 0-127.4z"/><path fill="#EF851C" stroke="#EF851C" stroke-width=".094" d="M263.5 164h128.1c.1 18.3 0 36.5 0 54.7-7.1 17.2-14 34.5-20.8 51.9-2.2-1.2-3.8-3-5.5-4.8L263.9 164.4l-.4-.4z"/><path fill="#7E3794" stroke="#7E3794" stroke-width=".094" d="M519.199 164.4l.4-.3c-.1 42.6-.1 85.3 0 127.9h-55.1c-17.2-7.2-34.601-13.8-51.9-20.9 9.6-10 19.5-19.6 29.2-29.4 25.801-25.7 51.4-51.7 77.4-77.3z"/><path fill="#FFBB1B" stroke="#FFBB1B" stroke-width=".094" d="M242.6 185.5c7.2-6.9 13.9-14.3 21.3-21.1l101.4 101.4c1.7 1.8 3.3 3.6 5.5 4.8-2.3 1.7-5.2 2.3-7.8 3.5-14.801 6-29.801 11.6-44.5 18-18.301-.2-36.601-.1-54.9-.1-42.6-.1-85.2.2-127.8-.1 35.5-35.6 71.2-71 106.8-106.4z"/><path fill="#1A8763" stroke="#1A8763" stroke-width=".094" d="M263.6 292c18.3 0 36.6-.1 54.9.1 17.3 7.1 34.6 13.8 51.899 20.8C342 341.7 313.3 370.1 284.8 398.8c-7.2 6.8-13.7 14.3-21.3 20.7 0-42.5-.1-85 .1-127.5z"/><path fill="#427FED" stroke="#427FED" stroke-width=".094" d="M464.5 292h55.1c42.5.1 85.1-.1 127.6.1-27.3 27.7-55 55.1-82.399 82.6-15.2 15.1-30.2 30.399-45.4 45.3-34-34.4-68.5-68.4-102.6-102.8-1.4-1.5-2.9-2.8-4.601-3.8 2.9-1.801 6.101-2.7 9.2-4 14.4-5.8 28.799-11.4 43.1-17.4z"/><path fill="#65B045" stroke="#65B045" stroke-width=".094" d="M370.4 312.9c7.3 17.399 13.9 35 21.2 52.399-.1 18.2 0 36.5-.1 54.7v88c-.2 13.1.3 26.2-.2 39.2-2.101-1-3.4-2.9-5.101-4.5C345.3 501.6 304.5 460.5 263.5 419.5c7.6-6.4 14.1-13.9 21.3-20.7 28.5-28.7 57.2-57.1 85.6-85.9z"/><path fill="#43459D" stroke="#43459D" stroke-width=".094" d="M412.199 313.4c1.7 1 3.2 2.3 4.601 3.8 34.1 34.4 68.6 68.4 102.6 102.8-42.7-.1-85.3.1-127.899 0 .1-18.2 0-36.5.1-54.7 6.699-17.3 13.899-34.5 20.598-51.9z"/></svg>
+                                        </div>
+                                        <span class="header__GappsName">Photos</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://duo.google.com/?usp=duo_ald" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+                                                <rect fill="none" height="192" width="192"/>
+                                                <path d="M184 101c-2.41 46.45-40.96 83-88 83-48.59 0-88-39.4-88-88S47.41 8 96 8h74c7.67 0 14 6.33 14 14v79z" fill="#1A73E8"/>
+                                                <path d="M170 8H96C47.4 8 8 47.38 8 95.95v-.02C8.27 47.59 47.57 9 96 9h74c7.68 0 14 6.33 14 14v-1c0-7.67-6.32-14-14-14z" fill="#FFFFFF" opacity=".2"/>
+                                                <path d="M184 101v-2c-2.41 46.46-40.95 84-88 84-48.43 0-87.72-39.62-87.99-88 0 .17-.01.83-.01 1 0 48.61 39.4 88.09 88 88 47.79-.09 85.87-36.62 88-84" fill="#1A237E" fill-opacity=".2"/>
+                                                <path d="M132 113c0 8.48-6.6 13.99-15 14H67c-8.39.01-14.99-5.46-15-13.93V118c.01 8.48 6.61 15.01 15 15h50c8.39-.01 15.01-6.52 15-15v-5zM156 117c-.03 2.47-3.31 3.82-5 2l-19-19v5l19 19c2 1.91 5 .71 5-2v-5z" fill="#185ABC"/>
+                                                <path d="M151 69l-19 19v12.01L151 119c1.77 1.88 5 .58 5-2V71c0-2.52-3.19-3.78-5-2z" fill="#F1F3F4"/>
+                                                <path d="M117 60H67c-8.39.01-15.01 6.74-15 15v38c.01 8.26 6.61 15.01 15 15h50c8.39-.01 15.01-6.74 15-15V75c-.01-8.26-6.61-15.01-15-15z" fill="#FFFFFF"/>
+                                                <polygon fill="#BDC1C6" points="132,101.2 132.01,100 136,104 136,84 132,88"/>
+                                              </svg>
+                                        </div>
+                                        <span class="header__GappsName">Duo</span>
+                                    </a>
+                                </li>
+                                <li class="header__GappsItem">
+                                    <a href="https://www.google.com.vn/shopping?hl=en&source=og" class="header__GappsLink">
+                                        <div class="header__GappsIcon" >
+                                            <svg  viewBox=".381 -4.99021715 516.22889793 516.22821715" width="2500" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="m411.503 136.66c20.182 0 36.545-16.362 36.545-36.544s-16.363-36.544-36.545-36.544-36.544 16.362-36.544 36.544 16.362 36.544 36.544 36.544zm-258.888-11.155 112.108-112.108c8.552-8.552 20.428-13.777 33.493-13.777h166.276a47.343 47.343 0 0 1 47.508 47.507v166.276c0 13.065-5.226 24.942-14.015 33.493l-111.937 112.044z" fill="#4285f4"/><path d="m386.048 358.94-138.153 138.283c-8.79 8.551-20.666 14.015-33.73 14.015s-24.942-5.464-33.493-14.015l-166.277-166.275c-8.789-8.552-14.014-20.428-14.014-33.493 0-13.302 5.463-25.179 14.014-33.73l138.22-138.22z" fill="#34a853"/><path d="m95.085 411.637-80.69-80.69c-8.789-8.549-14.014-20.427-14.014-33.491 0-13.302 5.463-25.179 14.014-33.73l138.22-138.22 114.3 114.302z" fill="#fbbc05"/><path d="m495.595 11.127a47.344 47.344 0 0 0 -31.103-11.507h-166.276c-13.065 0-24.941 5.225-33.493 13.777l-112.108 112.108 114.3 114.302 116.415-116.415a36.394 36.394 0 0 1 -8.37-23.276c0-20.182 16.361-36.544 36.543-36.544a36.394 36.394 0 0 1 23.277 8.37z" fill="#ea4335"/><circle cx="266.849" cy="252.764" fill="#4285f4" r="74.23"/><path d="m367.983 230.928h-98.726v42.358h56.828c-5.298 26.91-27.45 42.358-56.828 42.358-34.675 0-62.607-28.903-62.607-64.783s27.932-64.783 62.607-64.783c14.93 0 28.414 5.482 39.009 14.452l30.822-31.894c-18.782-16.943-42.862-27.408-69.831-27.408-58.754 0-105.95 48.837-105.95 109.633s47.196 109.633 105.95 109.633c52.975 0 101.134-39.867 101.134-109.633 0-6.478-.963-13.455-2.408-19.933z" fill="#fff"/></g></svg>                                        </div>
+                                        <span class="header__GappsName">Shopping</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="https://www.google.com.vn/intl/en/about/products" class="header__GappsBtn">More from Google</a>
+                        </div>
+                    </div>
+                    
+                </li>
+                <li class="header__item">
+                    <a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ" class="header__itemSignInBtn">
+                        Sign in
+                    </a>
+                    <!-- <div class="header__item-optionIconWrapper">
+                        <img src="./assets/img/avatar/avatar.png" alt="" class="header__item-optionIconImg">
+                    </div> -->
+                </li>
+            </ul>
+        </header>
+        <div class="body" id="body">
+            <div class="section s1">
+                <img src="./assets/img/logo/googlelogo_color_272x92dp.png" alt="" class="s1__LogoImg" id="s1__LogoImg--light">
+                <img src="./assets/img/logo/googlelogo_light_color_272x92dp.png" alt="" class="s1__LogoImg" id="s1__LogoImg--dark">
+            </div>
+            <div class="section s2">
+                <div class="s2__searchWrapper" >
+                    <div class="s2__searchIconWrapper">
+                        <i class="ti-search s2__searchIcon"></i>
+                    </div>
+                    <input type="text" class="s2__searchInput" >
+                    <div class="s2__searchVoiceInput">
+                        <svg class="s2__searchVoiceInputImg" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#4285f4" d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z"></path><path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path><path fill="#fbbc05" d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z"></path><path fill="#ea4335" d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z"></path></svg>
+                    </div>
+                   
+                    <div class="s2__recentSearchesWrapper " >
+                        <div class="s2__recentSearchesSeparator"></div>
+                        <h3 class="s2__recentSearchesListHeading">Related to recent searches</h3>
+                        <ul class="s2__recentSearchesList">
+                            <li class="s2__recentSearchesItem">
+                                <div class="s2__recentSearchesItemWrapper">
+                                    <i class="ti-time s2__recentSearchesIcon"></i>
+                                    <p class="s2__recentSearchesItemContent">
+                                        dropdown with search box bootstrap 5
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="s2__recentSearchesItem">
+                                <div class="s2__recentSearchesItemWrapper">
+                                    <i class="ti-time s2__recentSearchesIcon"></i>
+                                    <p class="s2__recentSearchesItemContent">
+                                        bootstrap search box with dropdown codepen
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="s2__recentSearchesItem">
+                                <div class="s2__recentSearchesItemWrapper">
+                                    <i class="ti-time s2__recentSearchesIcon"></i>
+                                    <p class="s2__recentSearchesItemContent">
+                                        Phim con heo
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="s2__recentSearchesItem">
+                                <div class="s2__recentSearchesItemWrapper">
+                                    <i class="ti-time s2__recentSearchesIcon"></i>
+                                    <p class="s2__recentSearchesItemContent">
+                                        Phim con khỉ
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="s2__recentSearchesItem">
+                                <div class="s2__recentSearchesItemWrapper">
+                                    <i class="ti-time s2__recentSearchesIcon"></i>
+                                    <p class="s2__recentSearchesItemContent">
+                                        bootstrap select dropdown with search box in angular
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="s2__recentSearchesItem">
+                                <div class="s2__recentSearchesItemWrapper">
+                                    <i class="ti-time s2__recentSearchesIcon"></i>
+                                    <p class="s2__recentSearchesItemContent">
+                                        Làm sao không học cũng biết
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="s2__recentSearchesItem">
+                                <div class="s2__recentSearchesItemWrapper">
+                                    <i class="ti-time s2__recentSearchesIcon"></i>
+                                    <p class="s2__recentSearchesItemContent">
+                                        Bí kíp cua gái xinh
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="s2__recentSearchesItem">
+                                <div class="s2__recentSearchesItemWrapper">
+                                    <i class="ti-time s2__recentSearchesIcon"></i>
+                                    <p class="s2__recentSearchesItemContent">
+                                        Phim con đười ươi
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="s2__recentSearchesItem">
+                                <div class="s2__recentSearchesItemWrapper">
+                                    <i class="ti-time s2__recentSearchesIcon"></i>
+                                    <p class="s2__recentSearchesItemContent">
+                                        Siêu nhân gao
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="s2__btnWrapper s2__recentSearchesBtnGroup">
+                            <div class="s2__btn">Google Search</div>
+                            <div class="s2__btn">I'm Feeling Lucky</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="s2__btnWrapper">
+                    <div class="s2__btn">Google Search</div>
+                    <div class="s2__btn">I'm Feeling Lucky</div>
+                </div>
+                <div class="s2__languageWrapper">
+                    <span class="s2__languageLable">Google offered in:</span>
+                    <ul class="s2__languageList">
+                        <li class="s2__languageItem">
+                            <a href="https://www.google.com/setprefs?sig=0_rFEYcKDQbNuuia-bYI5OkAOOJb0%3D&hl=vi&source=homepage&sa=X&ved=0ahUKEwilrJSHzPn3AhV7TWwGHZxxAcEQ2ZgBCA4" class="s2__languageItemLink">Tiếng Việt</a>
+                        </li>
+                        <li class="s2__languageItem">
+                            <a href="https://www.google.com/setprefs?sig=0_rFEYcKDQbNuuia-bYI5OkAOOJb0%3D&hl=fr&source=homepage&sa=X&ved=0ahUKEwjUmrW76vn3AhUlRWwGHUrGBpkQ2ZgBCA8" class="s2__languageItemLink">Français</a>
+                        </li>
+                        <li class="s2__languageItem">
+                            <a href="https://www.google.com/setprefs?sig=0_rFEYcKDQbNuuia-bYI5OkAOOJb0%3D&hl=zh-TW&source=homepage&sa=X&ved=0ahUKEwjE9Y246vn3AhVoS2wGHVm-AYIQ2ZgBCBA" class="s2__languageItemLink">繁體中文</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+           
+        </div>
+        <div class="footer" id="footer">
+            <div class="footer__section footer__location">
+                <span class="footer__LocationText">
+                    Vietnam
+                </span>
+            </div>
+            <div class="footer__section footer__info">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="https://about.google/?utm_source=google-VN&utm_medium=referral&utm_campaign=hp-footer&fg=1" class="footer__itemLink">About</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://www.google.com/intl/en_vn/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1" class="footer__itemLink">Advertising</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1" class="footer__itemLink">Business</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://google.com/search/howsearchworks/?fg=1" class="footer__itemLink">How Search works</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="https://policies.google.com/privacy?hl=en-VN&fg=1" class="footer__itemLink">Privacy</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://policies.google.com/terms?hl=en-VN&fg=1" class="footer__itemLink">Terms</a>
+                    </li>
+                    <li class="footer__item" onclick="toggleFooterSettingsContainer()">
+                        <a href="#" class="footer__itemLink">Settings</a>
+                        <div class="footer__settingsContainer" id="footer__settingsContainer">
+                            <ul class="footer__settingsList">
+                                <li class="footer_setttingsItem"> <a class="footer_setttingsItemLink" href="https://www.google.com/preferences?hl=en-VN&fg=1">Search settings</a> </li>
+                                <li class="footer_setttingsItem"> <a class="footer_setttingsItemLink" href="https://www.google.com/advanced_search?hl=en-VN&fg=1">Advanced Search</a> </li>
+                                <li class="footer_setttingsItem"> <a class="footer_setttingsItemLink" href="https://www.google.com/history/privacyadvisor/search/unauth?utm_source=googlemenu&fg=1">Your data in Search</a> </li>
+                                <li class="footer_setttingsItem"> <a class="footer_setttingsItemLink" href="https://www.google.com/history/optout?hl=en-VN&fg=1">Search history</a> </li>
+                                <li class="footer_setttingsItem"> <a class="footer_setttingsItemLink" href="https://support.google.com/websearch/?p=ws_results_help&hl=en-VN&fg=1">Search help</a> </li>
+                                <li class="footer_setttingsItem"> <a class="footer_setttingsItemLink" href="">Send feedback</a> </li>
+                            </ul>
+                            <div class="footer__settingsTheme" id="footer__settingsTheme" onclick="toggleTheme()">
+                                <label id="themeDarkOff" >Dark Theme: Off</label>
+                                <label id="themeDarkOn" >Dark Theme: On</label>
+                                <i id="themeSun" class="footer__settingsThemeIcon"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><rect fill="none" ></rect><path d="M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0 c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2 c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1 C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06 c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41 l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41 c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36 c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg></i>
+                                
+                                <i id="themeMoon" class="fa-solid fa-moon footer__settingsThemeIcon"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

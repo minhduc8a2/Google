@@ -1,0 +1,41 @@
+:root{
+    --appBackgroundColor:#202124;
+    
+    --headerOpeningGappsBtnBackgroundColor:#e2e2e3;
+    --headerGappsBackgroundColor:#303134;
+    --headerGappsText:#e8eaed;
+    --headerTextColor:white;
+    --headerScrollBarThumb:#535353;
+    --headerGappsItemHover:#28292c;
+    --headerOpeningGappsBtnHover:#303134;
+    
+    --ButtonTextColor:#e8eaed;
+    
+    --languageLabelColor:#bdc1c6;
+    --boxShadowColor: var(--footerBackgroundColor);
+    --languageSecondLabelColor:#dfe1e5;
+    --searchBorderColor:#5f6368;
+    --footerTextColor:#999d95;
+    --linkColor:#8ab4f8;
+    --footerBackgroundColor:#171717;
+    --searchIconColor:#999999;
+    --SignInBtnColor: #8ab4f8;
+    --btnHoverBackground: #3d3d3d;
+    --borderHover:#303134;
+    --searchBackgroundHover:#303134;
+    --recentSearchHeading:#999da2;
+    --recentSearchContentItem:#e8eaed;
+    --searchBtnBackground:#3d3d3d;
+    --recentSearchItemHover:#3d3d3d;
+    --btnBorderColorHover:#5f6368;
+    --footerBorderColor:#212327;
+    --footerSettingsItem:#bdc1c6;
+    --signInBtnText:var(--footerBackgroundColor);
+    --signInBtnBackgroundHover:white;
+    --hoverColorGrey:#303134;
+    --headerScrollBarThumb:var(--searchBorderColor);
+}
+
+
+
+
